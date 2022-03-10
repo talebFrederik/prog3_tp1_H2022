@@ -142,11 +142,13 @@
     <ClCompile Include="FileMessage.cpp" />
     <ClCompile Include="Membre.cpp" />
     <ClCompile Include="prog3_tp1_H2022.cpp" />
+    <ClCompile Include="Relation.cpp" />
     <ClCompile Include="Reseau.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FileMessage.h" />
     <ClInclude Include="Membre.h" />
+    <ClInclude Include="Relation.h" />
     <ClInclude Include="Reseau.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

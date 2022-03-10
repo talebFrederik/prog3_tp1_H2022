@@ -1,16 +1,25 @@
 #pragma once
 
+#include "Membre.h"
+
 #include <string>
 #include <deque>
+
+struct Message
+{
+	Membre* de{};
+	std::string message{};
+};
 
 class FileMessage
 {
 private:
-	std::string m_ids[2];
-	std::deque<std::string> m_messages;
+	Membre* m_membres[2];
+	std::deque<Message> m_messages;
 public:
-	FileMessage();
-	bool isFileMessage(std::string&, std::string&);
+	FileMessage(Membre*, Membre*);
+	bool isFileMessage(const std::string&,const std::string&);
+	void recevoirMessage(Membre*, std::string);
 	void AfficherMessages();
 };
 
